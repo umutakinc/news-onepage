@@ -19,7 +19,11 @@ TogglerX.addEventListener('click', function() {
 
 function addOverlay() {
     menu.classList.add('overlay');
+    document.querySelector('body').style.backgroundColor = "rgba(0,0,0,0.8)";
+    document.querySelector('body').style.overflow = "hidden";
 }
 function removeOverlay() {
     menu.classList.remove('overlay');
+    document.querySelector('body').style.backgroundColor = "inherit";
+    document.querySelector('body').style.overflow = "inherit";
 }
