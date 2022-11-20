@@ -68,3 +68,52 @@ body {
 .nav-link:hover, .nav-link:active, .nav-link:focus {
     color: var(--soft-red) !important;
 }
+
+.main-image {
+    width: 100;
+}
+
+.articles {
+    background-color: var(--very-dark-blue);
+    height: 520px;
+}
+
+.articles .title {
+    color: var(--soft-orange);
+    font-weight: 700;
+}
+
+.articles .article-wrapper {
+    height: 460px;
+}
+
+.articles .article:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+.desc {
+   font-size: .8rem;
+}
+
+.main-title {
+    font-size: 3rem;
+}
+
+.read-more {
+    letter-spacing: 5px;
+    background-color: var(--soft-red);
+    transition: all .5s;
+}
+
+.read-more:hover {
+    background-color: #000;
+}
+
+@media screen and (max-width: 998px) {
+    .articles {
+        height: auto;
+    }
+    .articles .article-wrapper {
+        height: auto;
+    }
+}
