@@ -109,6 +109,12 @@ body {
     background-color: #000;
 }
 
+.index {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+}
+
+
 @media screen and (max-width: 998px) {
     .articles {
         height: auto;
