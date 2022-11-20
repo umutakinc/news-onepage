@@ -26,6 +26,7 @@ ol, ul {
 body {
     font-family: 'Inter', sans-serif;
 }
+
 .navbar-toggler, .navbar-toggler:focus {
     outline: 0;
     border: 0;
@@ -76,6 +77,7 @@ body {
 .articles {
     background-color: var(--very-dark-blue);
     height: 520px;
+    margin-left: .8rem;
 }
 
 .articles .title {
@@ -118,6 +120,7 @@ body {
 @media screen and (max-width: 998px) {
     .articles {
         height: auto;
+        margin-left: 0;
     }
     .articles .article-wrapper {
         height: auto;
