@@ -26,3 +26,45 @@ ol, ul {
 body {
     font-family: 'Inter', sans-serif;
 }
+.navbar-toggler, .navbar-toggler:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+
+/******************************** Mobilde menü açıkken Çalışacak - Start ***************************/
+.overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay .navbar-nav {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+/************************************************ Finish *******************************************/
+
+#close-menu {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-link {
+    font-weight: var(--normal);
+    color: var(--dark-grayish-blue) !important;
+    transition: all .6s;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+    color: var(--soft-red) !important;
+}
